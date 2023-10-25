@@ -45,3 +45,5 @@ setInterval(() => {
         dirY = 1; 
     }
 }, 25);
+
+.addEventListener
