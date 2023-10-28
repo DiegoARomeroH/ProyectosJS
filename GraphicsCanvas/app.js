@@ -6,7 +6,7 @@ ctx.strokeRect(10, 10, 100, 100);
 ctx.fillRect(20, 20, 80, 80);
 ctx.clearRect(30, 30, 60, 60);
 ctx.fillStyle = "rgb(255, 0, 0)";
-ctx.fillRect(10, 40, 40, 40);
+ctx.fillRect(40, 40, 40, 40);
 
 ctx.fillStyle = "rgb(0, 0, 255)";
 

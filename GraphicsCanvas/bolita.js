@@ -7,12 +7,19 @@ let dirY = 1;
 let idX = 0;
 let idY = 0;
 
-function bolita(x, y) {
-    ctx.fillStyle = 'blue';
+let ini = 0;
+
+function hslColor(h){
+    return `hsl(${ h },70%,50%)`;
+}
+
+function bolita(x,y){
+    ctx.fillStyle = hslColor(ini);
+    ini += 2;
     ctx.beginPath();
-    ctx.arc(x, y, 20, 0, Math.PI * 2);
+    ctx.arc(x,y,20,0,Math.PI *2);
     ctx.fill();
-    ctx.stroke();
+
 }
 
 setInterval(() => {
@@ -45,5 +52,3 @@ setInterval(() => {
         dirY = 1; 
     }
 }, 25);
-
-.addEventListener

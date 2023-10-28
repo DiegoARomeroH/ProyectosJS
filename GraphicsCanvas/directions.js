@@ -6,7 +6,7 @@ let pozY = 1;
 
 function ghost(x, y) {
   ctx.font = '40px serif';
-  ctx.fillText('👮‍♂️', x * 30, y * 30);
+  ctx.fillText('👻', x * 30, y * 30);
 }
 
 const pollitos = [];
@@ -17,7 +17,7 @@ for (let i = 0; i < 20; i++) {
     pinta: function () {
       if (!this.comido) {
         ctx.font = '40px serif';
-        ctx.fillText('👨🏿‍🧑🏿‍👧🏿‍👧🏿', this.x * 30, this.y * 30);
+        ctx.fillText('🐥', this.x * 30, this.y * 30);
       }
     },
     comido: false
